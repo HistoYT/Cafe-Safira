@@ -1,0 +1,18 @@
+:root {
+    --coffee-brown: #6c4b33;
+    --soft-purple: #6c51a0;
+    --forest-green: #284324;
+    --deep-purple: #5c2064;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}

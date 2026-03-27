@@ -1,0 +1,121 @@
+.prep-section {
+    padding: 100px 5%;
+    background-color: #1a0b2e; /* Fondo oscuro inmersivo */
+    color: #ffffff;
+    text-align: center;
+}
+
+.prep-header {
+    margin-bottom: 60px;
+}
+
+.prep-tag {
+    color: #6B3FA0;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+}
+
+.prep-header h2 {
+    font-size: 3.5rem;
+    font-family: 'Georgia', serif;
+    margin: 10px 0;
+}
+
+.prep-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.prep-column {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.prep-column:hover {
+    background: rgba(107, 63, 160, 0.1);
+    transform: translateY(-10px);
+    border-color: #6B3FA0;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.prep-method-header {
+    background-color: #6B3FA0;
+    padding: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.prep-icon-box {
+    padding: 40px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prep-icon-box img {
+    width: 100px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.5s ease;
+}
+
+.prep-column:hover .prep-icon-box img {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.prep-info {
+    padding: 30px;
+    background: rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+.info-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 10px;
+}
+
+.info-item label {
+    display: block;
+    font-size: 0.7rem;
+    color: #7FAF8C;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.info-item span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.info-desc {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #d1d1d1;
+    min-height: 80px;
+}
+
+/* Animación de entrada */
+.prep-column.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .prep-header h2 { font-size: 2.5rem; }
+    .prep-container {
+        padding: 0 10px;
+        gap: 30px;
+    }
+}

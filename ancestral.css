@@ -1,0 +1,114 @@
+.ancestral-section {
+    background-color: #F5F2EA; /* Crema claro */
+    padding: 100px 10%;
+    overflow: hidden;
+    position: relative;
+}
+
+.ancestral-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- IMAGEN CON EFECTO REVEAL --- */
+.ancestral-image-wrapper {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(31, 77, 58, 0.15);
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.ancestral-image-wrapper.is-visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.ancestral-img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.8s ease;
+}
+
+.ancestral-image-wrapper:hover .ancestral-img {
+    transform: scale(1.05);
+}
+
+/* --- CONTENIDO DE TEXTO --- */
+.ancestral-content {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease-out 0.3s;
+}
+
+.ancestral-content.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.ancestral-subtitle {
+    color: #6B3FA0; /* Morado acento */
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.ancestral-title {
+    color: #1F4D3A; /* Verde oscuro principal */
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    font-family: 'Georgia', serif;
+}
+
+.ancestral-description {
+    color: #3F6F57; /* Verde medio */
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+/* --- BOTÓN PREMIUM --- */
+.ancestral-btn {
+    display: inline-block;
+    padding: 16px 35px;
+    background-color: #1F4D3A;
+    color: #F5F2EA;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    border: 2px solid #1F4D3A;
+}
+
+.ancestral-btn:hover {
+    background-color: transparent;
+    color: #1F4D3A;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(31, 77, 58, 0.2);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 992px) {
+    .ancestral-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+    
+    .ancestral-img {
+        height: 400px;
+    }
+    
+    .ancestral-title { font-size: 2.5rem; }
+}

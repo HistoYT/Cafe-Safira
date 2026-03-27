@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Safira - Exportación de Excelencia</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="ancestral.css">
+    <link rel="stylesheet" href="products-selector.css">
+    <link rel="stylesheet" href="mission-vision.css">
+    <link rel="stylesheet" href="preparation.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="header.js" defer></script>
+    <script src="hero.js" defer></script>
+    <script src="ancestral.js" defer></script>
+    <script src="products-selector.js" defer></script>
+    <script src="mission-vision.js" defer></script>
+    <script src="preparation.js" defer></script>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">Café Safira</div>
+        <nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nuestro Café</a></li>
+                <li><a href="#">Exportación</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-carousel">
+        <div class="slider-container">
+            <!-- Slide 1 -->
+            <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=1920');">
+                <div class="slide-content">
+                    <h1>Del grano a tu taza en el mundo</h1>
+                    <p>Exportando la esencia pura de nuestra tierra.</p>
+                    <button class="cta-button">Explorar Selección</button>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&q=80&w=1920');">
+                <div class="slide-content">
+                    <h1>Calidad de Exportación</h1>
+                    <p>Seleccionamos manualmente cada grano para garantizar la excelencia.</p>
+                    <button class="cta-button">Nuestro Proceso</button>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&q=80&w=1920');">
+                <div class="slide-content">
+                    <h1>Sabor Sin Fronteras</h1>
+                    <p>Llevamos el aroma de la montaña a cualquier rincón del planeta.</p>
+                    <button class="cta-button">Contactar Ventas</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles -->
+        <button class="prev-btn">&#10094;</button>
+        <button class="next-btn">&#10095;</button>
+
+        <div class="slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+    </section>
+
+    <!-- Nueva Sección: Café Ancestral -->
+    <section class="ancestral-section">
+        <div class="ancestral-container">
+            <div class="ancestral-image-wrapper reveal-element">
+                <!-- Imagen representativa de la cultura Arhuaca/Sierra Nevada -->
+                <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&q=80&w=1200" alt="Agricultor Arhuaco en la Sierra Nevada" class="ancestral-img">
+                <div class="image-overlay"></div>
+            </div>
+            
+            <div class="ancestral-content fade-element">
+                <span class="ancestral-subtitle">CAFÉ ANCESTRAL</span>
+                <h2 class="ancestral-title">CAFÉ NATIVO COLOMBIANO</h2>
+                <p class="ancestral-description">
+                    Estamos orgullosos de asociarnos con los agricultores indígenas Arhuacos en las montañas de la Sierra Nevada para producir nuestro café. Nos comprometemos a trabajar directamente con ellos para mejorar sus vidas, apoyar sus comunidades y asegurar que reciban un precio justo por su café.
+                </p>
+                <a href="#" class="ancestral-btn">Conoce Nuestro Origen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Selección de Productos -->
+    <section class="products-selector-section">
+        <div class="selector-container">
+            <div class="product-info">
+                <span class="category-tag">Nuestra Colección</span>
+                <h2>Elige tu Experiencia</h2>
+                <p>Selecciona el tamaño ideal para tu ritual diario de café premium.</p>
+                
+                <div class="size-options">
+                    <button class="size-btn active" data-size="100g" data-price="$15.000" data-img="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&q=80&w=600">
+                        100g <span>Muestra Ancestral</span>
+                    </button>
+                    <button class="size-btn" data-size="250g" data-price="$32.000" data-img="https://images.unsplash.com/photo-1580915411954-282cb1b0d780?auto=format&fit=crop&q=80&w=600">
+                        250g <span>Formato Estándar</span>
+                    </button>
+                    <button class="size-btn" data-size="500g" data-price="$58.000" data-img="https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?auto=format&fit=crop&q=80&w=600">
+                        500g <span>Ahorro Premium</span>
+                    </button>
+                </div>
+
+                <div class="product-pricing">
+                    <span class="price-label">Precio:</span>
+                    <span id="product-price" class="price-value">$15.000</span>
+                </div>
+
+                <a href="https://wa.me/1234567890?text=Hola! Quiero comprar el Café Safira de 100g" id="whatsapp-buy-btn" class="buy-btn">
+                    Comprar por WhatsApp
+                </a>
+            </div>
+
+            <div class="product-display">
+                <div class="image-bg-circle"></div>
+                <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&q=80&w=600" alt="Café Safira" id="display-image" class="product-img-main">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Misión y Visión Innovadora -->
+    <section class="mission-vision-section">
+        <!-- Elementos decorativos futuristas -->
+        <div class="mv-ambient-glow"></div>
+        <div class="floating-beans">
+            <div class="bean b1"></div>
+            <div class="bean b2"></div>
+            <div class="bean b3"></div>
+        </div>
+
+        <div class="mv-container">
+            <div class="mv-card reveal-left">
+                <div class="mv-icon">
+                    <!-- Icono de Red de Conexión/Sostenibilidad -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/><circle cx="12" cy="12" r="3"/><path d="M12 9v3m0 0v3m0-3h3m-3 0H9"/></svg>
+                </div>
+                <span class="mv-tag">El Presente</span>
+                <h3>Nuestra Misión</h3>
+                <div class="mv-line"></div>
+                <p>Llevar la pureza del café de la Sierra Nevada al mundo, transformando cada taza en un puente de respeto y prosperidad para las comunidades Arhuacas, garantizando sostenibilidad en cada grano exportado.</p>
+            </div>
+
+            <div class="mv-card reveal-right">
+                <div class="mv-icon">
+                    <!-- Icono de Ojo/Visión Futurista -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/><path d="M12 5V3m0 18v-2M5 12H3m18 0h-2"/></svg>
+                </div>
+                <span class="mv-tag">El Futuro</span>
+                <h3>Nuestra Visión</h3>
+                <div class="mv-line"></div>
+                <p>Para el 2030, ser el referente mundial de café ancestral colombiano, donde la innovación en exportación y la sabiduría indígena converjan para definir el nuevo estándar del café de especialidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Guía de Preparación Interactiva -->
+    <section class="prep-section">
+        <div class="prep-header">
+            <span class="prep-tag">Brewing Guide</span>
+            <h2>¿Cómo Preparar?</h2>
+            <p>Domina el arte de la extracción según tu método favorito</p>
+        </div>
+
+        <div class="prep-container">
+            <!-- Método 1: Cafetera -->
+            <div class="prep-column reveal-up">
+                <div class="prep-method-header">CAFETERA</div>
+                <div class="prep-icon-box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/924/924514.png" alt="Cafetera">
+                </div>
+                <div class="prep-info">
+                    <div class="info-item">
+                        <label>MOLIDO</label>
+                        <span>Medio</span>
+                    </div>
+                    <div class="info-item">
+                        <label>TIEMPO</label>
+                        <span>Tiempo de Máquina</span>
+                    </div>
+                    <div class="info-desc">
+                        Similar al vertido, perfil de sabor equilibrado, cuerpo y acidez redondeados.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Método 2: Moka -->
+            <div class="prep-column reveal-up" style="transition-delay: 0.1s;">
+                <div class="prep-method-header">MOKA ITALIANA</div>
+                <div class="prep-icon-box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3130/3130541.png" alt="Moka">
+                </div>
+                <div class="prep-info">
+                    <div class="info-item">
+                        <label>MOLIDO</label>
+                        <span>Extremadamente Fino</span>
+                    </div>
+                    <div class="info-item">
+                        <label>TIEMPO</label>
+                        <span>5 Minutos</span>
+                    </div>
+                    <div class="info-desc">
+                        Énfasis en el cuerpo; concentrado y rico. Se asemeja al espresso en intensidad.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Método 3: Prensa Francesa -->
+            <div class="prep-column reveal-up" style="transition-delay: 0.2s;">
+                <div class="prep-method-header">PRENSA FRANCESA</div>
+                <div class="prep-icon-box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2350/2350117.png" alt="Prensa Francesa">
+                </div>
+                <div class="prep-info">
+                    <div class="info-item">
+                        <label>MOLIDO</label>
+                        <span>Grueso</span>
+                    </div>
+                    <div class="info-item">
+                        <label>TIEMPO</label>
+                        <span>4 Minutos</span>
+                    </div>
+                    <div class="info-desc">
+                        Énfasis en la sensación en boca; de cuerpo completo, rico y cremoso.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Método 4: Chemex -->
+            <div class="prep-column reveal-up" style="transition-delay: 0.3s;">
+                <div class="prep-method-header">POUR OVER / CHEMEX</div>
+                <div class="prep-icon-box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3361/3361001.png" alt="Chemex">
+                </div>
+                <div class="prep-info">
+                    <div class="info-item">
+                        <label>MOLIDO</label>
+                        <span>Medio</span>
+                    </div>
+                    <div class="info-item">
+                        <label>TIEMPO</label>
+                        <span>3-5 Minutos</span>
+                    </div>
+                    <div class="info-desc">
+                        Énfasis en la acidez; limpio, brillante y fresco con muchos matices.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">Café Safira</div>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2026 Café Safira. Todos los derechos reservados.</p>
+                <p>Desarrollado por <a href="https://soluinc.com" target="_blank" rel="noopener noreferrer">Soluinc SAS</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
